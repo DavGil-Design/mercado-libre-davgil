@@ -1,0 +1,98 @@
+/*---------*/
+/*Registrer*/
+/*---------*/
+
+@import url(/static/css/styles.css);
+
+/*------*/
+/*Header*/
+/*------*/
+header > div > img {
+    width: 80%;
+    max-width: 300px;
+}
+header > div > div:nth-of-type(1),
+header > div > div:nth-of-type(2),
+header > img {
+    display: none;
+}
+
+/*----*/
+/*body*/
+/*----*/
+main {
+    padding-top: 20px;
+}
+form {
+    justify-content: space-around;
+}
+form div,
+form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+form > div > input {
+    border: 2px solid var(--grisOscuro2);
+    border-radius: 10px;
+    color: var(--grisOscuro);
+    flex-basis: 100%;
+    font-family: var(--roboto);
+    margin-bottom: 30px;
+    padding: 10px;
+    transition: opacity 0.3s;
+}
+form > div > input:last-child {
+    margin-bottom: 10px;
+}
+form > div > input:focus {
+    opacity: .8;
+}
+form > div:nth-child(3) div > label,
+form > div:nth-child(3) div > input,
+form > div:nth-child(4) div > label {
+    flex-basis: 100%;
+}
+form > div:nth-child(3) div > input {
+    margin: 10px 0 20px;
+}
+form > div:nth-child(3) div > label:nth-child(3),
+form > div:nth-child(3) div > label:nth-child(4) {
+    flex-basis: 50%;
+}
+form > div:nth-child(3) div > label:nth-child(3) input,
+form > div:nth-child(3) div > label:nth-child(4) input,
+form > div:nth-child(4) div > label input {
+    margin: 10px;
+    position: relative;
+    top: 2px;
+    border-color: var(--grisOscuro2);
+}
+form > div:nth-child(4) div > label {
+    margin: 10px;
+}
+form button {
+    flex-basis: 40%;
+    border-radius: 15px;
+    border: 2px solid var(--grisOscuro2);
+    margin: 20px 0;
+    max-width: 180px;
+    padding: 5px 0;
+    transition: all .3s;
+}
+form button:nth-of-type(1):active {
+    background-color: rgb(185, 118, 118);
+    border-color: rgb(179, 68, 68);
+}
+form button:nth-of-type(2):active {
+    background-color: rgb(89, 180, 112);
+    border-color: rgb(54, 155, 59);
+}
+
+/*-------*/
+/*foorter*/
+/*-------*/
+footer,
+footer a {
+    background-color: var(--blanco);
+}

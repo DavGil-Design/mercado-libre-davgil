@@ -1,0 +1,318 @@
+:root {
+    --amarillo    : #EAC926;
+    --celeste     : #1259C3;
+    --grisOscuro  : #666;
+    --grisOscuro2 : rgb(156, 156, 156);
+    --grisClaro   : #ebebeb;
+    --verde       : #39b54a;
+    --negro       : black;
+    --hover       : #0022AA;
+    --blanco      : #fff;
+    --roboto      : Roboto, sans-serif;
+    --regular     : 500;
+    --border-xs   : 5%;
+  }
+  
+
+html {
+    font-family: var(--roboto);
+    font-size: 12px;
+    color: var(--negro);
+    background-color: var(--blanco);
+}
+* {    
+    padding: 0;
+    margin: 0;
+    box-sizing: ​border-box​;
+}
+ul,li,a {
+    list-style:none;
+    padding: 0;    
+    text-decoration: none;
+    color: var(--negro);
+    font-family: var(--roboto);
+    font-weight: var(--regular);
+}
+h3 {
+    color: var(--grisOscuro);
+    font-size: 24px;
+    padding: 15px 0;
+}
+h4 {
+    color: var(--grisOscuro);
+    font-size: 20px;
+    padding: 12px 0;
+}
+
+/*----------*/
+/*Header-nav*/
+/*----------*/
+header {
+    background-color: var(--amarillo);
+}
+header > div:first-child{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    justify-content: space-around;
+}
+header > div > img {
+    width: 50%;
+    max-width: 300px;
+}
+header > div:nth-of-type(1) > div:nth-of-type(1) {
+    text-align: center;
+    margin: 10px 0;
+    position: relative;
+    width: 45%;
+}
+header > div:nth-of-type(1) > div > input:nth-child(1) {
+    display: inline-block;
+    border: solid var(--grisOscuro) 2px;
+    border-radius: 5px;
+    padding-left: 8px;
+    height: 28px;
+    width: 100%;
+}
+header > div:nth-of-type(1) > div > div:nth-child(2) {
+    position: absolute;
+    right: 0px;
+    width: 25px;
+    height: 24px;
+    border: 2px solid var(--grisOscuro);
+    border-left: none;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: var(--blanco);
+}
+header > div:nth-of-type(1) > div > div:nth-child(2) > input{
+    border: none;
+    position: relative;
+    top: -14px;
+    background-color: transparent;
+    cursor: pointer;
+    width: 26px;
+    height: 28px;
+    border-left: solid var(--grisOscuro) 2px;
+}
+.fa-search::before {
+    position: relative;
+    top: 5px;
+}
+header > div > div:nth-of-type(2) {
+    text-align: center;
+    padding: 15px 0;
+}
+header > nav {
+    padding: 0 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+header > nav > ul {
+    margin-bottom: 5px;
+    flex-direction: row;
+    display: flex;
+    flex-grow: .5;
+}
+header > nav > ul:nth-of-type(2) {
+    justify-content: flex-end;
+}
+header > nav > ul > li {
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+header > nav > ul:nth-of-type(2) > li:nth-child(1)::after {
+    content: "\f2c2";
+    font-family: "Font Awesome 5 Pro";
+    margin-left: 10px;
+}
+header > nav > ul:nth-of-type(2) > li:nth-child(2)::after {
+    content: "\f2f5";
+    font-family: "Font Awesome 5 Pro";
+    margin-left: 10px;
+    font-weight: 600;
+}
+header > nav > ul:nth-of-type(2) > li:nth-child(3)::after {
+    content: "\f291";
+    font-family: "Font Awesome 5 Pro";
+    margin-left: 10px;
+    font-weight: 600;
+}
+header > div:nth-of-type(2){
+    display: block;
+    text-align: center;
+    padding: 15px 0;
+}
+header > div > i {
+    background-color: var(--celeste);
+    color: var(--blanco);
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 2em;
+}
+header > img {
+    width: 100%;
+    position: relative;
+    top: 3px;
+    background-color: var(--grisOscuro);
+}
+
+/*---------*/
+/*Main-body*/
+/*---------*/
+main {
+    padding: 20px var(--border-xs) 30px;
+    background-color: var(--grisClaro);
+}
+main img {
+    width: 100%;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+article > div{
+    background-color: var(--blanco);
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 10px rgba(100, 100, 100, .4);
+    transition: all .3s ease-out;
+}
+article > div:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);    
+}
+article > div > ul {
+    border-top: 1px solid var(--grisClaro);    
+    padding: 5px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+article > div > ul > i {
+    color: var(--verde);
+    font-size: 1.5rem;
+    position: absolute;
+    background-color: var(--blanco);
+    border: 1px solid var(--verde);
+    padding: 8.2px 6px;
+    border-radius: 50%;
+    right: 30px;
+    top: -15px;
+}
+article > div > ul > li {
+    margin-bottom: 5px;
+}
+article > div > ul > li:nth-of-type(1) {
+    font-size: 18px;
+    flex-grow: 0.3;
+}
+article > div > ul > li:nth-of-type(2) {
+    color: var(--verde);
+    flex-grow: 0.7;
+}
+article > div > ul > li:nth-of-type(2) {
+    font-size: 16px;
+}
+
+article > div > p {   
+    display: none;
+    transition: all .3s ease-out;
+}
+article > div:hover > p {   
+    display: block;
+    color: var(--grisOscuro); 
+    padding: 0 15px 5px;
+    transition: all .3s;
+}
+
+/*------*/
+/*footer*/
+/*------*/
+footer, footer a {
+    color: var(--grisOscuro);
+    background: var(--grisClaro);
+}
+footer section {
+    text-align: center;
+    margin: 40px 50PX;
+    flex-basis: 100%;
+}
+footer section i {
+    color: var(--celeste);
+    font-size: 2em;
+    flex-basis: 100%;
+}
+footer div {
+    padding: 10px;
+}
+footer > div > div {
+    margin-top: 20px;
+    flex-basis: 100%;
+}
+
+
+/*-------------*/
+/*Media Queries*/
+/*-------------*/
+@media (max-width: 600px) {
+    header nav {
+        display: none;
+    }
+    h3 {
+        text-align: center;
+    }
+}
+@media (min-width: 601px) {
+    header > div:nth-of-type(2) {
+        display: none;
+    }
+    article {
+        width: 45%;
+        margin-bottom: 2%;
+    }
+    article > div > ul > i {
+        right: 15px;
+    }
+    article > div > p {
+        align-self: flex-end;
+    }    
+    footer, footer a {
+        color: var(--grisOscuro);
+        background: var(--blanco);
+    }
+    
+}
+@media (min-width: 769px) {
+    header > div > img {
+        width: 30%;
+    }
+    header > div:nth-of-type(1) > div:nth-of-type(1) {
+        width: 30%;
+    }
+    header > div > div:nth-of-type(2) {
+        width: 30%;
+    }
+    article{
+        width: 22%;
+        margin-bottom: 0;
+    }
+    article > div > ul > i {
+        font-size: 1rem;
+        padding: 5.2px 4px;
+        right: 5px;
+        top: -15px;
+    }
+    footer {
+        padding: 20px var(--border-xs) 0;
+    }
+    footer > div {        
+        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    footer section {
+        flex-basis: 30%;
+        margin: 0;
+    }
+}

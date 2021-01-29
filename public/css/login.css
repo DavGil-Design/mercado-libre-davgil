@@ -1,0 +1,59 @@
+/*-----*/
+/*Login*/
+/*-----*/
+
+@import url(/static/css/styles.css);
+
+/*------*/
+/*Header*/
+/*------*/
+header > div > img {
+    width: 80%;
+}
+header > div > div:nth-of-type(1),
+header > div > div:nth-of-type(2),
+header > img {
+    display: none;
+}
+
+/*----*/
+/*body*/
+/*----*/
+main {
+    padding: 20px var(--border-xs);
+}
+form > div{
+    display: flex;
+    flex-wrap: wrap;
+}
+form > div > input {
+    border: 2px solid var(--grisOscuro2);
+    border-radius: 10px;
+    color: var(--grisOscuro);
+    flex-basis: 100%;
+    font-family: var(--roboto);
+    margin-bottom: 30px;
+    padding: 10px;
+    transition: opacity 0.3s;
+}
+form > div > button {
+    border: none;
+    border-radius: 10px;
+    background-color: var(--celeste);
+    color: var(--blanco);
+    flex-basis: 100%;
+    padding: 10px;
+    transition: background-color .3s;
+}
+form > div > button:hover {
+    background-color: var(--hover);
+}
+
+
+/*-------*/
+/*foorter*/
+/*-------*/
+footer,
+footer a {
+    background-color: var(--blanco);
+}

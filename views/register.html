@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="/static/css/register.css">
+
+        <title>Mercado Libre - Registro</title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <img src="/static/images/logo-mercado-liebre.svg" width="20%" alt="logo Mercado Liebre">
+                <div>
+                    <input type="search" placeholder="Buscar productos, marcas...">
+                    <div class="fa fa-search">
+                        <input type="submit" value="">
+                    </div>
+                </div>
+                <div>
+                    <li class="fa fa-hand-holding-usd">
+                        <a>Comprá en cuotas y sin tarjeta de crédito</a>
+                    </li>
+                </div>
+            </div>            
+            <nav>
+                <ul>
+                    <li><a href="#">Ofertas</a></href></li>
+                    <li><a href="#">Tiendas Oficiales</a></href></li>
+                    <li><a href="#">Vender</a></href></li>
+                    <li><a href="#">Ayuda</a></href></li>
+                </ul>
+                <ul>
+                    <li><a href="/view/register.html">Creá tu cuenta</a></href></li>
+                    <li><a href="/view/login.html">Ingresá</a></href></li>
+                    <li><a href="#">Mis Compras</a></href></li>
+                </ul>                                   
+            </nav>    
+            <div>
+                <i class="fas fa-bars"></i>
+            </div>
+            <img src="/static/images/img-home-banner.jpg" alt="Cafetera Moulinex">
+        </header>
+        <main>
+            <form action="/registro" method="POST">
+                <div>
+                    <input type="text" name="nombre" placeholder="Nombre y apellido">
+                    <input type="text" name="usuario" placeholder="Nombre de usuario">
+                    <input type="text" name="email" placeholder="E-mail">
+                    <input type="text" name="clave" placeholder="Contraseña">
+                    <input type="text" name="confirmarClave" placeholder="Confirmar contraseña">
+                </div>
+                <div><h4>Fecha de nacimiento</h4>
+                    <input type="date" name="fecha" value="1990-01-01" min="1950-01-01" max="2010-01-01">
+                    <input type="text" name="domicilio" placeholder="Domicilio">
+                </div>
+                <div>
+                    <h4>Perfil de usuario</h4>
+                    <div>
+                        <label>Selecciona una imagen para tu pefil:</label>
+                        <input type="file" name="avatar" accept=".jpg" placeholder="Foto perfil de usuario">
+                        <label>
+                            <input type="radio" name="rol" value="comprador">
+                            Comprador
+                        </label>
+                        <label>
+                            <input type="radio" name="rol" value="vendedor">
+                            Vendedor
+                        </label>
+                    </div>
+                </div>                
+                <div>
+                    <h4>Intereses</h4>
+                    <div>
+                        <label>
+                            <input type="checkbox" name="interes" value="elctro">
+                            Electro
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interes" value="moda">
+                            Moda
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interes" value="hogar">
+                            Hogar
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interes" value="jugueteria">
+                            Juguetería
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interes" value="vidaSana">
+                            Vida sana
+                        </label>
+                    </div>
+                </div>                
+                <button type="reset">
+                    <span>Borrar</span>
+                </button>
+                <button type="submit">
+                    <span>Enviar</span>
+                </button>
+            </form>
+        </main>
+        <footer>
+            <div>
+                <section>
+                    <i class="fas fa-credit-card"></i>
+                    <h4>Pagá con tarjeta o con efectivo</h4>
+                    <p>Con MecadoLibreCashtenés cuotas sin interés con tarjeta o efectivo en puntos de pago ¡Y siempre es seguto!</p>
+                </section>
+                <section>
+                    <i class="fas fa-gift"></i>
+                    <h4>Envío gratis desde los $2.500</h4>
+                    <p>Solo por estar registrad@ en MescadoLibre tenés envíos gratis en miles de productos. Es un beneficio de MercadoPuntos</p>
+                </section>
+                <section>
+                    <i class="fas fa-user-shield"></i>
+                    <h4>Seguridad de principio a fin</h4>
+                    <p>¿No te gusta? ¡Devoldelo! En MercadoLibre no hay nada que no puedas hacer porque estás siempre protegid@</p>
+                </section>
+                <div>
+                    <a href="#">Copyright &copy; 1990-2021 MercadoLibre S.R.L.</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
